@@ -3,12 +3,15 @@ package com.test.helloworld;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.Layout;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 
 import com.test.helloworld.gridview.GridViewActivity;
+import com.test.helloworld.jump.AActivity;
 import com.test.helloworld.listview.ListViewActivity;
 import com.test.helloworld.recyclerview.RecyclerViewActivity;
 
@@ -24,6 +27,9 @@ public class MainActivity extends AppCompatActivity {
     private Button mBtnListView;
     private Button mBtnGridView;
     private Button mBtnRecycleView;
+    private Button mBtnLifeCycle;
+    private Button mBtnJump;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +52,8 @@ public class MainActivity extends AppCompatActivity {
         mBtnListView = findViewById(R.id.btn_ListView);
         mBtnGridView = findViewById(R.id.btn_GirdView);
         mBtnRecycleView = findViewById(R.id.btn_RecycleView);
+        mBtnLifeCycle = findViewById(R.id.btn_LifeCycle);
+        mBtnJump = findViewById(R.id.btn_Jump);
         setListener();
     }
 
@@ -60,6 +68,8 @@ public class MainActivity extends AppCompatActivity {
         mBtnListView.setOnClickListener(onClick);
         mBtnGridView.setOnClickListener(onClick);
         mBtnRecycleView.setOnClickListener(onClick);
+        mBtnLifeCycle.setOnClickListener(onClick);
+        mBtnJump.setOnClickListener(onClick);
     }
 
     private class OnClick implements View.OnClickListener{
@@ -95,6 +105,12 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.btn_RecycleView:
                     intent = new Intent(MainActivity.this, RecyclerViewActivity.class);
+                    break;
+                case R.id.btn_LifeCycle:
+                    intent = new Intent(MainActivity.this,LifeCycleActivity.class);
+                    break;
+                case R.id.btn_Jump:
+                    intent = new Intent(MainActivity.this, AActivity.class);
                     break;
             }
 
