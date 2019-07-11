@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_lrv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/linear_recycle_view"
+        />
+
+    <Button
+        android:id="@+id/btn_hrv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/horizontal_recycle_view"
+        />
+
+    <Button
+        android:id="@+id/btn_gridrv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/gird_recycle_view"/>
+
+    <Button
+        android:id="@+id/btn_sgrv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/staggered_gird_recycle_view"/>
+
+
+</LinearLayout>

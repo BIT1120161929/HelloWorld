@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="你会哪些移动开发:"
+        android:textSize="24sp"
+        android:layout_margin="10dp"
+        />
+
+    <CheckBox
+        android:id="@+id/cb_android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:text="android"
+        android:textSize="24sp"
+        android:layout_margin="5dp"/>
+
+    <CheckBox
+        android:id="@+id/cb_ios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cb_android"
+        android:text="IOS"
+        android:textSize="24sp"
+        android:layout_margin="5dp"/>
+
+    <CheckBox
+        android:id="@+id/cb_h5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cb_ios"
+        android:text="H5"
+        android:textSize="24sp"
+        android:layout_margin="5dp"/>
+
+    <CheckBox
+        android:id="@+id/cb_else"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cb_h5"
+        android:text="其他"
+        android:textSize="24sp"
+        android:layout_margin="5dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cb_else"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/tv_hobby"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="你有什么爱好："
+            android:textSize="24dp"
+            android:textColor="#FF00FF"
+            android:layout_margin="10dp"/>
+
+        <CheckBox
+            android:id="@+id/cb_sing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_hobby"
+            android:text="唱"
+            android:textSize="24sp"
+            android:paddingLeft="10dp"
+            android:layout_margin="10dp"
+            android:button="@drawable/bg_checkbox"/>
+
+        <CheckBox
+            android:id="@+id/cb_dance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_hobby"
+            android:text="跳"
+            android:textSize="24sp"
+            android:paddingLeft="10dp"
+            android:layout_margin="10dp"
+            android:button="@drawable/bg_checkbox"/>
+
+        <CheckBox
+            android:id="@+id/cb_rap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_hobby"
+            android:text="RAP"
+            android:textSize="24sp"
+            android:paddingLeft="10dp"
+            android:layout_margin="10dp"
+            android:button="@drawable/bg_checkbox"/>
+
+        <CheckBox
+            android:id="@+id/cb_basketball"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_hobby"
+            android:text="篮球"
+            android:textSize="24sp"
+            android:paddingLeft="10dp"
+            android:layout_margin="10dp"
+            android:button="@drawable/bg_checkbox"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">HelloWorld</string>
+    <string name="text_test1">随意定义的一串字符串</string>
+    <string name="linear_recycle_view">LinearRecycleView</string>
+    <string name="horizontal_recycle_view">HorizontalRecycleView</string>
+    <string name="gird_recycle_view">GridRecycleView</string>
+    <string name="staggered_gird_recycle_view">StaggeredGridRecycleView</string>
+</resources>
