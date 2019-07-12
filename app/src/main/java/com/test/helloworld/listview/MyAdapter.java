@@ -23,13 +23,14 @@ public class MyAdapter extends BaseAdapter {
         this.myLayoutInflater = LayoutInflater.from(mycontext);
     }
 
-    //TODO:返回项数
     @Override
     public int getCount() {
         return 10;
     }
 
-    //用的很少
+    /**
+     * 用的很少
+     */
     @Override
     public Object getItem(int position) {
         return null;

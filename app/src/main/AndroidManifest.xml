@@ -11,6 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".Fragment.ContainerActivity"></activity>
         <activity android:name=".jump.BActivity">
             <intent-filter>
                 <action android:name="com.test.B" />
@@ -18,8 +19,9 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name=".jump.AActivity"
-            android:label="A"/>
+        <activity
+            android:name=".jump.AActivity"
+            android:label="A" />
         <activity android:name=".LifeCycleActivity" />
         <activity android:name=".recyclerview.StaggeredGridRecycledViewActivity" />
         <activity android:name=".recyclerview.GridRecyclerViewActivity" />

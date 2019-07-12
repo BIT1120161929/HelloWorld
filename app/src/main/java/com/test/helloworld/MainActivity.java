@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
+import com.test.helloworld.Fragment.ContainerActivity;
 import com.test.helloworld.gridview.GridViewActivity;
 import com.test.helloworld.jump.AActivity;
 import com.test.helloworld.listview.ListViewActivity;
@@ -29,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
     private Button mBtnRecycleView;
     private Button mBtnLifeCycle;
     private Button mBtnJump;
+    private Button mBtnFragment;
 
 
     @Override
@@ -54,6 +56,7 @@ public class MainActivity extends AppCompatActivity {
         mBtnRecycleView = findViewById(R.id.btn_RecycleView);
         mBtnLifeCycle = findViewById(R.id.btn_LifeCycle);
         mBtnJump = findViewById(R.id.btn_Jump);
+        mBtnFragment = findViewById(R.id.btn_Fragment);
         setListener();
     }
 
@@ -70,6 +73,7 @@ public class MainActivity extends AppCompatActivity {
         mBtnRecycleView.setOnClickListener(onClick);
         mBtnLifeCycle.setOnClickListener(onClick);
         mBtnJump.setOnClickListener(onClick);
+        mBtnFragment.setOnClickListener(onClick);
     }
 
     private class OnClick implements View.OnClickListener{
@@ -111,6 +115,9 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.btn_Jump:
                     intent = new Intent(MainActivity.this, AActivity.class);
+                    break;
+                case R.id.btn_Fragment:
+                    intent = new Intent(MainActivity.this, ContainerActivity.class);
                     break;
             }
 
